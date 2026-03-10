@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="card">
+
+    <h1>Weather App</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="city" placeholder="Enter city name">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="weather">
+        <h2>{{ temp }} °C</h2>
+        <h3>{{ city }}</h3>
+
+        <img src="https:{{ icon }}" width="100">
+
+        <p>{{ description }}</p>
+        <p>{{ day }}</p>
+    </div>
+
+</div>
+
+</body>
+</html>

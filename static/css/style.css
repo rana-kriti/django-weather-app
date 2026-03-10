@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31");
+    background-size:cover;
+    background-position:center;
+}
+
+/* main card */
+
+.card{
+    background: rgba(255,255,255,0.85);
+    padding:30px;
+    width:300px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+form{
+    margin:20px 0;
+}
+
+input{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    background:black;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.weather img{
+    margin:10px 0;
+}
