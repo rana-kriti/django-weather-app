@@ -1,4 +1,4 @@
-"# django-weather-app" 
+# django-weather-app
 
 A simple weather web application built using **Django, HTML, and CSS**.  
 This app allows users to search for a city and view the current weather conditions.
